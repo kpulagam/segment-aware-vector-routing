@@ -1,0 +1,10 @@
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/segment-aware-vector-routing.iml
+.idea/vcs.xml
+data/embeddings/msmarco_100000.npy
+data/embeddings/msmarco_100000.npy
+*.tex
+data/embeddings/msmarco_100000.npy
