@@ -1,0 +1,13 @@
+topics_per_segment,method,recall
+1,Baseline,1.0
+1,HMRC-3,1.0
+2,Baseline,0.678
+2,HMRC-3,0.7655
+3,Baseline,0.6015
+3,HMRC-3,0.7875
+5,Baseline,0.438
+5,HMRC-3,0.6255
+7,Baseline,0.3735
+7,HMRC-3,0.493
+10,Baseline,0.292
+10,HMRC-3,0.4015

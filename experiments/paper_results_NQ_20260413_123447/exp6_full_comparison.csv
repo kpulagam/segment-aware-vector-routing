@@ -1,0 +1,10 @@
+segmentation,method,recall,overhead
+Coherent,Baseline,1.0,1.0
+Coherent,HMRC-3,1.0,2.84
+Coherent,HMRC-5,1.0,4.66
+Semi-3,Baseline,0.6015,1.0
+Semi-3,HMRC-3,0.7875,3.0
+Semi-3,HMRC-5,0.7895,5.0
+Random,Baseline,0.1355,1.0
+Random,HMRC-3,0.1475,3.0
+Random,HMRC-5,0.1955,5.0

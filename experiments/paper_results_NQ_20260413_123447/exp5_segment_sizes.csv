@@ -1,0 +1,11 @@
+segment_size,method,recall,n_segments
+100,Baseline,0.319,1000
+100,HMRC-3,0.7195,1000
+250,Baseline,0.4475,400
+250,HMRC-3,0.767,400
+500,Baseline,0.6015,200
+500,HMRC-3,0.7875,200
+1000,Baseline,0.6725,100
+1000,HMRC-3,0.7665,100
+2000,Baseline,0.6845,50
+2000,HMRC-3,0.7215,50

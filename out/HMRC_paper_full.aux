@@ -1,0 +1,93 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{johnson2019billion}
+\citation{wang2021milvus}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}The Problem}{1}{subsection.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Our Contribution}{1}{subsection.1.2}\protected@file@percent }
+\citation{guo2020accelerating}
+\citation{malkov2018efficient}
+\citation{wang2021learning}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Inverted File Indexing}{2}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Spilling and Replication}{2}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Graph-Based Methods}{2}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Learned Indexes}{2}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.5}Position of Our Work}{2}{subsection.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Problem: Centroid Degradation}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Formal Setup}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Routing recall across segment types and $k$ values}}{2}{table.caption.6}\protected@file@percent }
+\newlabel{tab:problem_detail}{{1}{2}{Routing recall across segment types and $k$ values}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Why Mean Centroids Fail}{2}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Empirical Validation}{2}{subsection.3.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Routing recall degrades as segments become more heterogeneous. Coherent segments achieve 100\% recall; mixing just 3 topics drops recall to 64.4\%.}}{3}{figure.caption.5}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:problem}{{1}{3}{Routing recall degrades as segments become more heterogeneous. Coherent segments achieve 100\% recall; mixing just 3 topics drops recall to 64.4\%}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}HMRC: Our Approach}{3}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Index Construction}{3}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Query Routing}{3}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Why K-Means Works}{3}{subsection.4.3}\protected@file@percent }
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces HMRC Index Construction}}{3}{algorithm.1}\protected@file@percent }
+\newlabel{alg:build}{{1}{3}{HMRC Index Construction}{algorithm.1}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces HMRC Query Routing}}{3}{algorithm.2}\protected@file@percent }
+\newlabel{alg:route}{{2}{3}{HMRC Query Routing}{algorithm.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Complexity Analysis}{3}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces HMRC improves routing recall on Semi-3 segments. HMRC-3 achieves 81.2\% recall compared to 64.4\% baseline (+26\% relative gain).}}{4}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:solution}{{2}{4}{HMRC improves routing recall on Semi-3 segments. HMRC-3 achieves 81.2\% recall compared to 64.4\% baseline (+26\% relative gain)}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Experiments}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Setup}{4}{subsection.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Main Results}{4}{subsection.5.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces HMRC performance on Semi-3 segments at different $k$ values}}{4}{table.caption.8}\protected@file@percent }
+\newlabel{tab:main}{{2}{4}{HMRC performance on Semi-3 segments at different $k$ values}{table.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces HMRC performance across segment types. HMRC maintains 100\% recall on coherent segments while improving Semi-3 from 64.4\% to 81.2\%.}}{4}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:heatmap}{{3}{4}{HMRC performance across segment types. HMRC maintains 100\% recall on coherent segments while improving Semi-3 from 64.4\% to 81.2\%}{figure.caption.9}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Routing Recall@10 across segment types}}{4}{table.caption.10}\protected@file@percent }
+\newlabel{tab:full}{{3}{4}{Routing Recall@10 across segment types}{table.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Generalization Across Segment Types}{4}{subsection.5.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces HMRC benefit across heterogeneity levels. The gap between baseline and HMRC-3 widens as segments become more heterogeneous.}}{5}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:topics}{{4}{5}{HMRC benefit across heterogeneity levels. The gap between baseline and HMRC-3 widens as segments become more heterogeneous}{figure.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Recall@10 vs. topics per segment}}{5}{table.caption.12}\protected@file@percent }
+\newlabel{tab:topics}{{4}{5}{Recall@10 vs. topics per segment}{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}Effect of Heterogeneity Level}{5}{subsection.5.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}Effect of Number of Representatives}{5}{subsection.5.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Left: Recall vs. number of representatives. Performance plateaus at $r=3$. Right: Storage overhead scales linearly with $r$.}}{5}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:reps}{{5}{5}{Left: Recall vs. number of representatives. Performance plateaus at $r=3$. Right: Storage overhead scales linearly with $r$}{figure.caption.13}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Effect of number of representatives on Semi-3 segments}}{5}{table.caption.14}\protected@file@percent }
+\newlabel{tab:reps}{{5}{5}{Effect of number of representatives on Semi-3 segments}{table.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Effect of Segment Size}{5}{subsection.5.6}\protected@file@percent }
+\bibstyle{ACM-Reference-Format}
+\bibcite{johnson2019billion}{{1}{}{{}}{{}}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces HMRC provides consistent gains across segment sizes, with larger relative improvements on smaller segments.}}{6}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:sizes}{{6}{6}{HMRC provides consistent gains across segment sizes, with larger relative improvements on smaller segments}{figure.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Recall@10 vs. segment size (Semi-3 segments)}}{6}{table.caption.16}\protected@file@percent }
+\newlabel{tab:sizes}{{6}{6}{Recall@10 vs. segment size (Semi-3 segments)}{table.caption.16}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Discussion}{6}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}When Does HMRC Help?}{6}{subsection.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Choosing $r$}{6}{subsection.6.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Limitations}{6}{subsection.6.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.4}Integration}{6}{subsection.6.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusion}{6}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Future Work}{6}{subsection.7.1}\protected@file@percent }
+\bibcite{guo2020accelerating}{{2}{}{{}}{{}}}
+\bibcite{malkov2018efficient}{{3}{}{{}}{{}}}
+\bibcite{wang2021milvus}{{4}{}{{}}{{}}}
+\bibcite{lewis2020retrieval}{{5}{}{{}}{{}}}
+\bibcite{wang2021learning}{{6}{}{{}}{{}}}
+\bibcite{jegou2011product}{{7}{}{{}}{{}}}
+\bibcite{andre2015cache}{{8}{}{{}}{{}}}
+\bibcite{baranchuk2018revisiting}{{9}{}{{}}{{}}}
+\bibcite{douze2024faiss}{{10}{}{{}}{{}}}
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{4.185pt}
+\newlabel{tocindent2}{10.34999pt}
+\newlabel{tocindent3}{0pt}
+\newlabel{tocindent4}{0pt}
+\newlabel{tocindent5}{0pt}
+\providecommand\NAT@force@numbers{}\NAT@force@numbers
+\@writefile{toc}{\contentsline {section}{References}{7}{section*.18}\protected@file@percent }
+\newlabel{TotPages}{{7}{7}{}{page.7}{}}
+\gdef \@abspage@last{7}

@@ -1,0 +1,13 @@
+{
+  "dataset": "MSMARCO-100K",
+  "n_vectors": 100000,
+  "embedding_dim": 384,
+  "segment_size": 500,
+  "n_topics": 100,
+  "key_results": {
+    "baseline_coherent": 1.0,
+    "baseline_semi3": 0.644,
+    "hmrc3_semi3": 0.8125,
+    "improvement_pct": 26.164596273291924
+  }
+}

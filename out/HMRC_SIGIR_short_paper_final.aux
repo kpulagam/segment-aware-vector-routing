@@ -1,0 +1,58 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Problem: Centroid Degradation}{1}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Formal Setup}{1}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Why Mean Centroids Fail}{1}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Empirical Validation}{1}{subsection.2.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Routing recall degrades severely as segments become more heterogeneous. Coherent segments achieve near-perfect recall; mixing just 3 topics drops recall to 64.4\%.}}{2}{figure.caption.5}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:problem}{{1}{2}{Routing recall degrades severely as segments become more heterogeneous. Coherent segments achieve near-perfect recall; mixing just 3 topics drops recall to 64.4\%}{figure.caption.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Routing recall degrades with segment heterogeneity. Coherent segments achieve perfect routing; mixing 3 topics drops recall by 35.6 percentage points.}}{2}{table.caption.6}\protected@file@percent }
+\newlabel{tab:problem}{{1}{2}{Routing recall degrades with segment heterogeneity. Coherent segments achieve perfect routing; mixing 3 topics drops recall by 35.6 percentage points}{table.caption.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}HMRC: Our Approach}{2}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Index Construction}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Query Routing}{2}{subsection.3.2}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces HMRC improves routing on heterogeneous segments. HMRC-3 achieves 26\% relative improvement over baseline with 3$\times $ centroid storage.}}{2}{table.caption.7}\protected@file@percent }
+\newlabel{tab:main}{{2}{2}{HMRC improves routing on heterogeneous segments. HMRC-3 achieves 26\% relative improvement over baseline with 3$\times $ centroid storage}{table.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Why K-Means Works}{2}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Complexity Analysis}{2}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments}{2}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Setup}{2}{subsection.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Main Results}{2}{subsection.4.2}\protected@file@percent }
+\citation{johnson2019billion}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces HMRC consistently outperforms baseline across all values of $k$. The gap is largest at lower $k$ values where routing precision matters most.}}{3}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:solution}{{2}{3}{HMRC consistently outperforms baseline across all values of $k$. The gap is largest at lower $k$ values where routing precision matters most}{figure.caption.8}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces HMRC maintains 100\% recall on coherent segments (no harm) while substantially improving heterogeneous segments.}}{3}{table.caption.9}\protected@file@percent }
+\newlabel{tab:full}{{3}{3}{HMRC maintains 100\% recall on coherent segments (no harm) while substantially improving heterogeneous segments}{table.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Generalization Across Segment Types}{3}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Ablation Studies}{3}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Routing recall vs. number of representatives on Semi-3 segments. Left: Recall plateaus at $r=3$, matching the number of topics. Right: Storage overhead grows linearly with $r$. The sweet spot is $r=3$: 26\% improvement at 3$\times $ overhead.}}{3}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:reps}{{3}{3}{Routing recall vs. number of representatives on Semi-3 segments. Left: Recall plateaus at $r=3$, matching the number of topics. Right: Storage overhead grows linearly with $r$. The sweet spot is $r=3$: 26\% improvement at 3$\times $ overhead}{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces HMRC benefit across heterogeneity levels. The gap between baseline and HMRC-3 widens as segments become more heterogeneous, showing HMRC helps most when the problem is worst.}}{3}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:topics}{{4}{3}{HMRC benefit across heterogeneity levels. The gap between baseline and HMRC-3 widens as segments become more heterogeneous, showing HMRC helps most when the problem is worst}{figure.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces HMRC provides consistent relative gains (22--31\%) across heterogeneity levels.}}{3}{table.caption.12}\protected@file@percent }
+\newlabel{tab:topics}{{4}{3}{HMRC provides consistent relative gains (22--31\%) across heterogeneity levels}{table.caption.12}{}}
+\citation{guo2020accelerating}
+\citation{malkov2018efficient}
+\bibstyle{ACM-Reference-Format}
+\bibcite{guo2020accelerating}{{1}{2020}{{Guo et~al.}}{{}}}
+\bibcite{johnson2019billion}{{2}{2019}{{Johnson et~al.}}{{}}}
+\bibcite{malkov2018efficient}{{3}{2018}{{Malkov and Yashunin}}{{}}}
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{4.185pt}
+\newlabel{tocindent2}{10.34999pt}
+\newlabel{tocindent3}{0pt}
+\newlabel{tocindent4}{0pt}
+\newlabel{tocindent5}{0pt}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces HMRC gains are largest for smaller segments, which are most affected by topic mixing.}}{4}{table.caption.13}\protected@file@percent }
+\newlabel{tab:sizes}{{5}{4}{HMRC gains are largest for smaller segments, which are most affected by topic mixing}{table.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Related Work}{4}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{4}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{References}{4}{section*.15}\protected@file@percent }
+\newlabel{TotPages}{{4}{4}{}{page.4}{}}
+\gdef \@abspage@last{4}
