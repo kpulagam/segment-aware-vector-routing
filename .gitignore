@@ -1,8 +1,21 @@
-.idea/inspectionProfiles/profiles_settings.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/segment-aware-vector-routing.iml
-.idea/vcs.xml
+# macOS
+.DS_Store
+**/.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data and outputs (keep canonical results, ignore scratch)
 data/
-*.tex
+out/
+*.npy
+*.faiss
