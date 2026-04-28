@@ -38,8 +38,8 @@ Vector databases use segment-based architectures where each segment is represent
 ### Installation
 
 ```bash
-git clone https://github.com/yourusername/HMRC.git
-cd HMRC
+git clone https://github.com/kpulagam/segment-aware-vector-routing.git
+cd segment-aware-vector-routing
 pip install -r requirements.txt
 ```
 
@@ -82,20 +82,21 @@ python experiments/run_paper_experiments.py \
 ## 📁 Repository Structure
 
 ```
-HMRC/
+segment-aware-vector-routing/
 ├── src/
 │   ├── hmrc.py              # Core HMRC implementation
-│   ├── segmentation.py      # Segment creation strategies
-│   └── evaluation.py        # Evaluation utilities
+│   ├── segmentation.py      # Segment creation strategies (Coherent/Semi-t/Random/Time-batched)
+│   └── evaluation.py        # Routing recall evaluation
 ├── experiments/
-│   ├── run_paper_experiments.py
-│   ├── evaluate_realistic.py
-│   └── generate_embeddings.py
+│   ├── main.py              # Run paper experiments end-to-end
+│   ├── exp10_routing_time.py
+│   ├── paper_results_MSMARCO-100K_20260413_121345/
+│   └── paper_results_NQ_20260413_123447/
 ├── paper/
-│   ├── HMRC_paper.tex       # LaTeX paper
-│   └── figures/             # Paper figures
-├── data/                    # Embeddings (not in git)
-└── results/                 # Outputs (not in git)
+│   └── HMRC_IEEE_Access.pdf
+├── requirements.txt
+├── LICENSE
+└── README.md
 ```
 
 ## 🔬 How It Works
@@ -140,10 +141,12 @@ Shows HMRC works across different segment sizes.
 ## 📝 Citation
 
 ```bibtex
-@article{hmrc2024,
-  title={HMRC: Heterogeneous Multi-Representative Centroids for Improved Vector Database Routing},
-  author={Your Name},
-  year={2024}
+@article{pulagam2026hmrc,
+  title   = {HMRC: Heterogeneous Multi-Representative Centroids for Improved Vector Database Routing},
+  author  = {Pulagam, Kishore},
+  journal = {IEEE Access},
+  year    = {2026},
+  note    = {Under review}
 }
 ```
 

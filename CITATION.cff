@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying paper."
+title: "HMRC: Heterogeneous Multi-Representative Centroids for Improved Vector Database Routing"
+authors:
+  - family-names: Pulagam
+    given-names: Kishore
+license: MIT
+repository-code: "https://github.com/kpulagam/segment-aware-vector-routing"
+preferred-citation:
+  type: article
+  title: "HMRC: Heterogeneous Multi-Representative Centroids for Improved Vector Database Routing"
+  authors:
+    - family-names: Pulagam
+      given-names: Kishore
+  journal: "IEEE Access"
+  year: 2026
