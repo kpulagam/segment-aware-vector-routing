@@ -41,7 +41,7 @@ def main():
         url = f"https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/{dataset}.zip"
         data_path = util.download_and_unzip(url, "data/beir")
         
-        corpus, queries, qrels = GenericDataLoader(data_folder=data_path).load(split="test")
+        corpus, queries, qrels = GenericDataLoader(data_folder=data_path).load(split="tests")
         
         print(f"Corpus size: {len(corpus)}")
         texts = []
