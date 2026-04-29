@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19873073.svg)](https://doi.org/10.5281/zenodo.19873073)
 # HMRC: Heterogeneous Multi-Representative Centroids
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-red)](paper/HMRC_paper.pdf)
