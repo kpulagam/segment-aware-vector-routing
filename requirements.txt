@@ -11,4 +11,5 @@ sentence-transformers>=2.2.0
 datasets>=2.0.0
 
 # Optional: faster search
-# faiss-cpu>=1.7.0
+faiss-cpu>=1.7.0
+faiss-cpu>=1.7.4
