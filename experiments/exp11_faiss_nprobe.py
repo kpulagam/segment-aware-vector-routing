@@ -316,6 +316,10 @@ def main():
     parser.add_argument('--n-topics', type=int, default=100)
     parser.add_argument('--n-queries', type=int, default=2000)
     parser.add_argument('--seed', type=int, default=42)
+    parser.add_argument('--nprobes', type=int, nargs='+',
+                        default=[1, 3, 5, 10, 15, 20, 30],
+                        help='nprobe sweep; at 1M scale use e.g. '
+                             '10 20 30 50 100 150 200')
     args = parser.parse_args()
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -364,7 +368,7 @@ def main():
     gt_neighbors_corpus_idx = true_nearest_neighbor(corpus_vectors, queries)
     print(f"  Done.\n")
 
-    nprobe_values = [1, 3, 5, 10, 15, 20, 30]
+    nprobe_values = args.nprobes
     all_rows = []
 
     # ----- Baseline: 1 list per segment -----

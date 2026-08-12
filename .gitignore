@@ -20,3 +20,7 @@ out/
 *.npy
 *.faiss
 *.tex
+.venv/*
+
+# Manuscript / submission materials (kept local only)
+paper/

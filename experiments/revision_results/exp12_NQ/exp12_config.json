@@ -1,0 +1,17 @@
+{
+  "n_topics": 100,
+  "segment_size": 500,
+  "n_queries": 2000,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "strategies": [
+    "coherent",
+    "timebatch"
+  ],
+  "dataset": "NQ"
+}
